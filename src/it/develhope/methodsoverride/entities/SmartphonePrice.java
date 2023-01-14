@@ -14,10 +14,7 @@ public class SmartphonePrice implements Cloneable{
 
     @Override
     public String toString() {
-        return "SmartphonePrice{" +
-                "priceType='" + priceType + '\'' +
-                ", priceInEuros=" + priceInEuros +
-                '}';
+        return priceType + priceInEuros;
     }
 
     @Override
@@ -33,7 +30,7 @@ public class SmartphonePrice implements Cloneable{
         return Objects.hash(priceType, priceInEuros);
     }
 
-    public SmartphonePrice (String type, int price){
+    public SmartphonePrice (String type, double price){
         this.priceType = type;
         this.priceInEuros = price;
     }

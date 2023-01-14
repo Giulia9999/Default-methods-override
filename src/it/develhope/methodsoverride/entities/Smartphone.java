@@ -11,13 +11,7 @@ public class Smartphone implements Cloneable{
 
     @Override
     public String toString() {
-        return "Smartphone{" +
-                "brandName='" + brandName + '\'' +
-                ", modelName='" + modelName + '\'' +
-                ", batterymAh=" + batterymAh +
-                ", producerPrice=" + producerPrice +
-                ", retailPrice=" + retailPrice +
-                '}';
+        return "Smartphone details: " + brandName + " - " + modelName + " - " + batterymAh + "% - " + producerPrice + "$ - " + retailPrice + "$";
     }
 
     @Override
@@ -36,8 +30,8 @@ public class Smartphone implements Cloneable{
     @Override
     public Object clone() throws CloneNotSupportedException {
         Smartphone clonedSmartphone = (Smartphone)super.clone();
-        clonedSmartphone.producerPrice = this.producerPrice;
-        clonedSmartphone.retailPrice = this.retailPrice;
+        clonedSmartphone.producerPrice = (SmartphonePrice) this.producerPrice.clone();
+        clonedSmartphone.retailPrice = (SmartphonePrice) this.retailPrice.clone();
         return clonedSmartphone;
     }
 

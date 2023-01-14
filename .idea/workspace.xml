@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="00df6d59-5dcc-4ac9-8838-b80c4bfc6cc0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/methodsoverride/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/methodsoverride/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/develhope/methodsoverride/entities/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/methodsoverride/entities/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/develhope/methodsoverride/entities/SmartphonePrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/methodsoverride/entities/SmartphonePrice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
