@@ -7,7 +7,7 @@ public class SmartphonePrice implements Cloneable{
     public double priceInEuros;
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
+    public SmartphonePrice clone() throws CloneNotSupportedException {
         SmartphonePrice clonedSmartphonePrice = (SmartphonePrice)super.clone();
         return clonedSmartphonePrice;
     }

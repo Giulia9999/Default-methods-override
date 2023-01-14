@@ -17,5 +17,21 @@ public class Start {
        String phone2Details =smartphone2.toString();
        System.out.println(phone1Details);
        System.out.println(phone2Details);
+
+       boolean isSmartphoneEqual = smartphone1.equals(smartphone2);
+        System.out.println("Are smartphones equal? " + isSmartphoneEqual);
+
+
+        try {
+            Smartphone clonedSmartphone2 = smartphone2.clone();
+            clonedSmartphone2.modelName = "Iphone 6s";
+            System.out.println(clonedSmartphone2.toString());
+            boolean isCloneEqual = smartphone2.equals(clonedSmartphone2);
+            System.out.println("Is the cloned smartphone equal? " + isCloneEqual);
+        } catch (CloneNotSupportedException e) {
+             e.printStackTrace();
+            System.out.println("Error");
+        }
+
     }
 }
