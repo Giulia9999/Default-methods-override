@@ -5,8 +5,8 @@ import java.util.Objects;
  * This class defines the SmartphonePrice properties and has 4 default methods override, implementing Cloneable
  */
 public class SmartphonePrice implements Cloneable{
-    public String priceType;
-    public double priceInEuros;
+    private String priceType;
+    private double priceInEuros;
 
     /**
      * Override clone() method
@@ -21,7 +21,7 @@ public class SmartphonePrice implements Cloneable{
 
     /**
      * override of the default toString() method
-     * @return returns a String with the 2 attributes regarding a SmartphonePrice
+     * @return A String with the 2 attributes regarding a SmartphonePrice
      */
     @Override
     public String toString() {
@@ -30,8 +30,8 @@ public class SmartphonePrice implements Cloneable{
 
     /**
      * Override of the equals() method
-     * @param o
-     * @return
+     * @param o an Object type method parameter
+     * @return  True if the objects are equal, false if they aren't
      */
     @Override
     public boolean equals(Object o) {
@@ -43,7 +43,7 @@ public class SmartphonePrice implements Cloneable{
 
     /**
      * Overrride of hashCode() method
-     * @return
+     * @return The object hashcode
      */
     @Override
     public int hashCode() {

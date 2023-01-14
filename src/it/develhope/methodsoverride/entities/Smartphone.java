@@ -6,15 +6,55 @@ import java.util.Objects;
  * This class defines the basic Smartphone properties and has 4 default methods override, implementing Cloneable
  */
 public class Smartphone implements Cloneable{
-    public String brandName;
-    public String modelName;
-    public int batterymAh;
-    public SmartphonePrice producerPrice;
-    public SmartphonePrice  retailPrice;
+    private String brandName;
+    private String modelName;
+    private int batterymAh;
+    private SmartphonePrice producerPrice;
+    private SmartphonePrice  retailPrice;
+
+    /**
+     * Define get() method for private attributes
+     * @return The private attribute
+     */
+    public String getModelName(){
+        return this.modelName;
+    }
+    public int getBatterymAh(){
+        return this.batterymAh;
+    }
+    public String getBrandName(){
+        return this.brandName;
+    }
+    public SmartphonePrice getProducerPrice(){
+        return this.producerPrice;
+    }
+    public SmartphonePrice getRetailPrice(){
+        return this.retailPrice;
+    }
+
+    /**
+     * Define set() attribute
+     * @param newModelName To set the new value of the private attribute
+     */
+    public void setModelName(String newModelName){
+         this.modelName = newModelName;
+    }
+    public void setBrandName(String newBrandName){
+        this.brandName = newBrandName;
+    }
+    public void setBatterymAh(int newBatterymAh){
+        this.batterymAh = newBatterymAh;
+    }
+    public void setProducerPrice(SmartphonePrice newProdPrice){
+        this.producerPrice = newProdPrice;
+    }
+    public void setRetailPrice(SmartphonePrice newRetPrice){
+        this.retailPrice = newRetPrice;
+    }
 
     /**
      * Override for toString() method
-     * @return The method return Smartphone class attributes
+     * @return The Smartphone class attributes
      */
     @Override
     public String toString() {
@@ -23,7 +63,7 @@ public class Smartphone implements Cloneable{
 
     /**
      * Override equals() method
-     * @return The method returns "false" if the 2 objects are different, "true" if the objects are equal
+     * @return "False" if the 2 objects are different, "true" if the objects are equal
      */
     @Override
     public boolean equals(Object o) {
