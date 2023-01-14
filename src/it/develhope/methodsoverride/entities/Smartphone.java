@@ -40,4 +40,12 @@ public class Smartphone implements Cloneable{
         clonedSmartphone.retailPrice = this.retailPrice;
         return clonedSmartphone;
     }
+
+    public Smartphone (String brand, String model, int battery,SmartphonePrice prodP, SmartphonePrice retailP){
+        this.brandName = brand;
+        this.modelName = model;
+        this.batterymAh = battery;
+        this.producerPrice = prodP;
+        this.retailPrice = retailP;
+    }
 }
